@@ -1,0 +1,16 @@
+.tagsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #e8e5e480;
+    border-radius: 100px;
+    margin: 0;
+    padding: 9px;
+    font-family: "Neue Montreal Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 1.2em;
+}
