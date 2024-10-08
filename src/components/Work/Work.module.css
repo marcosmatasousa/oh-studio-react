@@ -1,0 +1,33 @@
+.workContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    margin: 170px 0 170px 0;
+}
+
+.typography {
+    font-family: "Neue Montreal Medium", sans-serif;
+    font-size: 37px;
+    font-weight: 450;
+    letter-spacing: -0.2px;
+    line-height: 1.2em;
+    text-align: center;
+    margin: 5px;
+}
+
+.touch {
+    color :rgb(153, 153, 153);
+    text-decoration: none;
+}
+
+.touch :hover {
+    color :rgb(192, 186, 186);
+    text-decoration: none;
+}
+
+touch :visited {
+    text-decoration: none;
+    color: inherit;
+}
