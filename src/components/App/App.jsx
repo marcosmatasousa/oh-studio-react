@@ -1,32 +1,48 @@
-import Navbar from '../Navbar/Navbar'
-import Main from '../Main/Main'
-import ImageRow from '../ImageRow/ImageRow'
-import Work from '../Work/Work'
-import Footer from '../Footer/Footer'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+import Home from '../Home/Home';
+import Profile from '../Profile/Profile';
+import Contact from '../Contact/Contact';
+import Layout from '../Layout/Layout';
 
 import './App.css'
+
+const routes = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      {
+        path: '/',
+        element: <Home />
+      },
+      {
+        path: '/profile',
+        element: <Profile />
+      },
+      {
+        path: 'contact',
+        element: <Contact />
+      }
+
+    ]
+  },
+  {
+    path: '/profile',
+    element: <Home />
+  },
+  {
+    path: '/contact',
+    element: <Home />
+  }
+])
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Main />
-      <ImageRow
-        leftImage="model-girl.jpg"
-        rightImage="model-boy.jpg" 
-      />
-      <ImageRow
-        leftImage="phone.jpg"
-        rightImage="computer.jpg" 
-      />
-      <ImageRow
-        leftImage="books.jfif"
-        rightImage="coffee.jpg" 
-      />
-      <Work />
-      <Footer />
+      <RouterProvider router={routes} />
     </>
   )
 }
 
-export default App
+export default App;

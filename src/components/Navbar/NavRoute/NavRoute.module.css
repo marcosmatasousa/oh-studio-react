@@ -1,0 +1,15 @@
+.navButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 93px;
+    height: 40px;
+    cursor: pointer;
+    color: black;
+}
+
+.navButtonSelected {
+    background-color: white;
+    border-radius: 100px;
+    color: black;
+}
